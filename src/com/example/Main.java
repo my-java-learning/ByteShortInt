@@ -16,13 +16,18 @@ public class Main {
         System.out.println("Byte : " + myNewByteValue);
 
         //short has a width of 16
-        short myShortValue = 32767;
+        short myShortValue = 32_767;
         short myNewShortValue =(short)(myShortValue/2);
         System.out.println("Short : " + myNewShortValue);
 
         //long has a width of 64
         long myLongValue =  -9_223_372_036_854_775_808L;
 
-
+        //exercise
+        byte exByte = 100;
+        short exShort = 1_000;
+        int exInt = 10_000;
+        long exLong = 50000 + 10 * (exByte + exShort + exInt);
+        System.out.println("Total : " + exLong);
     }
 }
